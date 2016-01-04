@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0",
+  "name": "Limpet Controller",
+  "description": "Controller app for the Limpet monitor add-on",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Christiane Ruetten",
+    "url": "https://github.com/cr/limpet"
+  },
+  "type": "certified",
+  "permissions": {
+    "device-storage:apps": { 
+      "access": "read",
+      "description": "Required for compiling a list of apps"
+    },
+    "webapps-manage": {
+      "description": "Required for compiling a list of apps"
+    }
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+    "de": {
+      "name": "Limpet-Steuerung",
+      "description": "Steuerungsanwendung für das Limpet-Add-on"
+    }
+  },
+  "default_locale": "en"
+}

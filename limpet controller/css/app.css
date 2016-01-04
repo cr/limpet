@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+body {
+  font-size: 1rem;
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+}
+
+p {
+  font-size: inherit;
+}
+
+.app_list {
+  background: red;
+  width: 100%;
+}
+
+.app_list_div {
+  background: green;
+  width: 100%;
+  clear: both;
+}
+
+.app_icon {
+  background: gray;
+  float: left;
+}
+
+.app_list_name {
+  background: greenyellow;
+}
+
+.app_list_orign {
+  background: orange;
+}
+
+.app_list_checkbox {
+  background: blueviolet;
+}
+
+.limpet_status_active {
+  color: green;
+}
+
+.limpet_status_inactive {
+  color: red;
+}

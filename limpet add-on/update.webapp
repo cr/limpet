@@ -1,0 +1,10 @@
+{
+  "name": "Limpeto",
+  "description": "Attaches to apps and logs their behavior.o",
+  "version": "0.1",
+  "developer": { "name": "Christiane Ruetteno" },
+  "package_path": "limpet.zip",
+  "icons": {
+    "128": "/icons/icon128x128.png"
+  }
+}

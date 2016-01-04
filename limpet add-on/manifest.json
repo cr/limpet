@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "Limpet",
+  "description": "Attaches to apps and logs their behavior.",
+  "version": "0.1.11",
+  "role": "addon",
+  "author": "Christiane Ruetten",
+
+  "icons": {
+    "128": "/icons/icon128x128.png"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "alarms",
+    "contextMenus",
+    "cookies",
+    "notifications",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "limpet@mozilla.org"
+    }
+  },
+
+  "background": {
+    "persistent": true,
+    "scripts": ["/js/manager.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["app://system.gaiamobile.org/index.html"],
+      "js": ["/js/system.js"]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/js/injector.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "/js/collector.js"
+  ]
+}
